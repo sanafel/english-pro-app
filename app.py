@@ -4,7 +4,7 @@ import os
 import random
 
 # 1. CONFIGURATION
-st.set_page_config(page_title="SanaEnglishPro", page_icon="🎓", layout="wide")
+st.set_page_config(page_title="SanaEnglishPro V2", page_icon="🚀", layout="wide")
 
 # 2. FONCTION AUDIO
 def prononcer_anglais(texte):
@@ -122,9 +122,9 @@ if 'data' not in st.session_state:
     ]
 
 # 4. INTERFACE
-st.title("🎓 SanaEnglishPro")
-st.sidebar.title("Navigation")
-st.sidebar.write(f"Total d'expressions : **{len(st.session_state.data)}**")
+st.title("🎓 SanaEnglishPro V2 (200+)") # Ajoute V2 pour vérifier sur ton téléphone
+st.sidebar.title("📚 Menu Principal")
+st.sidebar.write(f"✅ Base de données : **{len(st.session_state.data)}** phrases")
 
 menu = st.sidebar.selectbox("Choisir une section", ["Flashcards", "Dictionnaire", "Infos"])
 
